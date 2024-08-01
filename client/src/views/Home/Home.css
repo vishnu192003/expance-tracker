@@ -76,7 +76,14 @@ body {
     color: #3498db;
   }
   
-
+  .transactions-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    overflow-y: auto;
+  }
   
   .add-transaction {
     position: fixed;
