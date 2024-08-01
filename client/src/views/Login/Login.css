@@ -1,0 +1,75 @@
+
+.user-input{
+    display: block;
+    margin: 15px auto;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    outline: none;
+    font-size: 20px;
+}
+.select{
+    display: block;
+    margin: 15px auto;
+    width: 515px;
+    height: 47px;
+    border-radius: 10px;
+    padding: 2px 5px;
+    outline: none;
+    font-size: 20px;
+}
+.user-input:focus, .user-input:active{
+    border: 2px solid black;
+    outline: none;
+}
+.btn{
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 500;
+    
+}
+.btn:hover{
+    background-color: rgb(1, 33, 175);
+    box-shadow: black 0px 0px 5px;
+
+}
+.auth-form{
+    width: 511px;
+    height: 285px;
+    border: 3px solid black;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+   background-color: aliceblue;
+    box-shadow: black 0px 0px 5px;
+
+}
+.heading{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.link{
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+.illustration{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 800px;
+}

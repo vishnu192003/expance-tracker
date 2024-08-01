@@ -1,0 +1,160 @@
+.transaction-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .date {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .amount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .category {
+    font-size: 0.8rem;
+    background-color: #3498db;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+  
+  .wrap-delete {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .button-delete {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+
+    
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    background: #ff4757;
+    border: none;
+    border-radius: 5rem;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+ 
+  
+
+  
+  .button-delete:active .text {
+    transform: translateY(-2px);
+  }
+  
+  .button-delete:hover {
+    filter: brightness(0.9);
+  }
+
+  
+  @media (max-width: 768px) {
+    .button-delete .text {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    .button-delete .icon {
+      padding: 0 10px;
+    }
+  
+    .button-delete .icon svg {
+      width: 18px;
+      height: 18px;
+    }
+  } 
+  
+  @media (min-width: 768px) {
+    .transaction-card {
+      flex-wrap: nowrap;
+    }
+  
+    .title {
+      width: auto;
+      margin-right: 15px;
+    }
+  
+    .date {
+      width: auto;
+      margin-right: 15px;
+    }
+  
+    .amount {
+      margin-left: auto;
+    }
+  
+    .category {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  
+    .delete-button {
+      margin-left: 15px;
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .transaction-card {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 1rem;
+    }
+  
+    .date {
+      font-size: 0.8rem;
+    }
+  
+    .amount {
+      font-size: 1rem;
+      padding: 3px 8px;
+    }
+  
+    .category {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+    }
+  
+    .delete-button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }

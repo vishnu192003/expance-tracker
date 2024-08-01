@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Headings */
+.h3 {
+    margin: 0;
+    font-size: 5rem;
+}
+
+.add-name {
+    font-size: 2.2rem;
+    text-align: center;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.user-input, .select {
+    display: block;
+    margin: 15px auto;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.select {
+    height: 47px;
+}
+
+.user-input:focus, .user-input:active, .select:focus, .select:active {
+    border: 2px solid black;
+    outline: none;
+}
+
+/* Button */
+.btn {
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: #3498db;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+}
+
+.btn:hover {
+    background-color: #0b69a7;
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Form Container */
+.form-div {
+    position: relative;
+    width: 100%;
+}
+
+.auth-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 45vh;
+    max-width: 600px;
+    padding: 20px;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: #6a7679;
+    box-shadow: 0px 0px 5px black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Illustration */
+.illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .auth-form {
+        width: 95%;
+    }
+
+    .illustration {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-input, .select {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+}
