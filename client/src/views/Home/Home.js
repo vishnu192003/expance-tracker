@@ -8,7 +8,10 @@ import { Link } from 'react-router-dom'
 
 function Home() {
 
-  
+  const [user, setUser] = useState("")
+  const [transactions, setTransactions] = useState([])
+  const [netIncome, setNetIncome] = useState(0)
+  const [netExpense, setNetExpense] = useState(0)
 
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"))
